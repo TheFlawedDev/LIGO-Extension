@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Pilowlava';
+    src: url('fonts/Pilowlava-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/static/Outfit-Bold.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/static/Nunito-Medium.ttf') format('woff');
+}
+
+/*
+Color Pallet
+#3084F2 blue
+#A9BF04 green
+#222602 darker green
+#50590A dark green
+#DCF230 lime green
+#FFFEF6 white
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    
+}
+
+header h1 {
+    font-family: 'Pilowlava', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+header nav a {
+    margin-left: 2rem;
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero {
+    background: linear-gradient(to bottom, #3084F2, #DCF230);
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    padding: 1rem 7rem 3rem 2rem;
+    border-radius: 10px;
+    margin: 1rem 4rem ;
+}
+
+.hero h2 {
+    font-size: xx-large;
+    color: #FFFEF6;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #FFFEF6;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #222602;
+    color: #FFFEF6;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 2rem;
+ 
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    padding: 2rem 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider .card {
+    flex: none;
+    width: 240px;
+    height: 390px;
+    margin: 0 1rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    scroll-snap-align: start;
+    padding: 1rem;
+
+}
+
+.slider .card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slider .card h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.title {
+    display: flex;
+    justify-content: left;
+    padding: 2px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  position: relative;
+  border: 2.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.cardTitle h2 {
+    color: #222602;
+    margin: 0;
+    
+}
+
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.about-me {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+/*.blob {
+    position: absolute;
+    top: auto;
+    left: auto;
+    fill: #3084F2;
+    width: 15vmax;
+    transform-origin: 50% 50%;
+    z-index: -1;
+}*/
+
+.graphicscontainer {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    background-color: #f0f0f0;
+    z-index: -1;
+}
+.blob {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.blob1 {
+    top: 10%;
+    left: 20%;
+}
+.blob2 {
+    top: 30%;
+    left: 50%;
+}
+.blob3 {
+    top: 50%;
+    left: 70%;
+}
+.blob4 {
+    top: 70%;
+    left: 30%;
+}
+.blob5 {
+    top: 20%;
+    left: 80%;
+}
+.blob6 {
+    top: 60%;
+    left: 10%;
+}
+.blob svg {
+    width: 100%;
+    height: 100%;
+}
+.blob1 path {
+    fill: #ff6347; /* tomato */
+}
+.blob2 path {
+    fill: #4682b4; /* steelblue */
+}
+.blob3 path {
+    fill: #32cd32; /* limegreen */
+}
+.blob4 path {
+    fill: #ff69b4; /* hotpink */
+}
+.blob5 path {
+    fill: #dda0dd; /* plum */
+}
+.blob6 path {
+    fill: #ff4500; /* orangered */
+}
+footer {
+    background-color: #FFFEF6;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
